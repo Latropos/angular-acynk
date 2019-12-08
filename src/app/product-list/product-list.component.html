@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+
+<h2>Courses</h2>
+
+<div *ngFor="let course of courses">
+
+   <h3>
+    <a [title]="course.name + ' details'">
+      {{ course.name }}
+    </a>
+    
+  <i class="material-icons">{{course.symName}}</i>
+  </h3>
+
+  <p *ngIf="course.description">
+    Description: {{ course.description }}
+  </p>
+
+  <button (click)="share()">
+    Pointless button
+  </button>
+</div>
