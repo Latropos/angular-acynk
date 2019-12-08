@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { courses } from '../courses';
 
+let x : number;
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -9,12 +11,19 @@ import { courses } from '../courses';
 })
 export class ProductListComponent {
   Kursy = courses;
-
+  
   share() {
     window.alert('The button did nothing!');
   }
-}
 
+  show(kursID) {
+    x = kursID;
+  }
+
+  check(kursID) {
+    if (kursID - x == 0) return true;
+    return false;  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

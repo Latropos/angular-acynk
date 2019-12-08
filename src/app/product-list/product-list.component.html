@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <i class="material-icons">favorite</i>
@@ -8,21 +7,25 @@
 
 <h2>Courses</h2>
 
-<div *ngFor="let course of Kursy">
+<div *ngFor="let course of Kursy, index as kursId">
 
-   <h3>
-    <a [title]="course.name + ' details'">
-      {{ course.name }}
-    </a>
-    
-  <i class="material-icons">{{course.symName}}</i>
-  </h3>
+     <h3>
+      <a [title]="course.name + ' details'">
+        {{ course.name }}
+      </a>
 
+    </h3>
+    <button (click)="show(kursId)">
+      Show <i class="material-icons">{{course.sym}}</i>
+    </button>
+<div *ngIf="check(kursId)">
+  <h2>Punkty ETCS: {{course.etcs}} </h2>
+  <h2>Typ zajęć: {{course.ClassType}} </h2>
+  <h2>Maksymalna liczba studentów: {{course.maxStudents}} </h2>
+  <h2>Ocena: {{course.rate}} </h2>
+  <h2>Ikona: <i class="material-icons">{{course.sym}}</i> </h2>
   <p *ngIf="course.description">
     Description: {{ course.description }}
   </p>
-
-  <button (click)="share()">
-    Pointless button
-  </button>
+</div>
 </div>
