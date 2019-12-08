@@ -8,10 +8,10 @@ import { courses } from '../courses';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  courses = courses;
+  Kursy = courses;
 
   share() {
-    window.alert('The product has been shared!');
+    window.alert('The button did nothing!');
   }
 }
 

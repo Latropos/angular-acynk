@@ -48,11 +48,7 @@ class Course implements ICourse {
     }
 }
 
-
-
-
 export const courses = [
-
   new Course('Muzyka', 0, 0, 150, 3, 'Gra na fortepianie, pianinie i paru innych instrumentach, ale tylko klawiszowych.'),
   new Course('Muzyka', 5, 2, 20, 3, 'Gra na instrumentach'),
   new Course('Plastyka', 0, 0, 100, 3, 'Zajęcia artystyczne'),
@@ -63,26 +59,7 @@ export const courses = [
   new Course('Psychologia', 7, 0, 50, 3, 'Labolatorium z psychologii'),  
   new Course('Język angielski', 4, 1, 50, 3, 'Nauka angielskiego na poziomie od średniozaawansowanego do zaawansowanego'),
   new Course('Język niemiecki', 4, 1, 50, 3, 'Nauka niemieckiego na poziomie od początkkującego do zaawansowanego'),
-];
-/*
-export const courses = [
-  {
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
-  },
-  {
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
-  },
-  {
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
-];
-*/
+]
 
 /*
 Copyright Google LLC. All Rights Reserved.
