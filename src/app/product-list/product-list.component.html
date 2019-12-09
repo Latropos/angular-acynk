@@ -7,17 +7,17 @@
 
 <h2>Courses</h2>
 
-<div *ngFor="let course of Kursy, index as kursId">
+<div *ngFor="let course of Kursy, index as kursId" class="zebra">
 
      <h3>
       <a [title]="course.name + ' details'">
         {{ course.name }}
       </a>
 
-    </h3>
     <button (click)="show(kursId)">
       Show <i class="material-icons">{{course.sym}}</i>
     </button>
+    </h3>
 <div *ngIf="check(kursId)">
   <h2>Punkty ETCS: {{course.etcs}} </h2>
   <h2>Typ zajęć: {{course.ClassType}} </h2>

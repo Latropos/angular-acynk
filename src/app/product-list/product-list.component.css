@@ -1,5 +1,13 @@
 
-
+.zebra:nth-child(even) button{
+  background: lightblue
+}
+.zebra:nth-child(odd) button{
+  background: lightseagreen
+}
+.zebra button{
+  float:right;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
