@@ -18,6 +18,7 @@
       Show <i class="material-icons">{{course.sym}}</i>
     </button>
     </h3>
+    
 <div *ngIf="check(kursId)">
   <h2>Punkty ETCS: {{course.etcs}} </h2>
   <h2>Typ zajęć: {{course.ClassType}} </h2>
@@ -32,6 +33,6 @@
 
 
 <app-course-details
-  [course]="product" 
-  (notify)="onNotify()">
+  [course]="product"
+  (notify)="onNotify()"> 
 </app-course-details>
