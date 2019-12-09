@@ -17,7 +17,8 @@ export class ProductListComponent {
   }
 
   show(kursID) {
-    x = kursID;
+    if (x==kursID) x=undefined;
+    else x = kursID;
   }
 
   check(kursID) {
