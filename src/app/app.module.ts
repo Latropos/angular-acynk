@@ -6,7 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { CourseDetailsComponent } from './course-details/course-details.component';
+import { CourseDetailsComponent } from './product-list/course-details/course-details.component';
+
 
 @NgModule({
   imports: [
